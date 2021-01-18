@@ -33,7 +33,11 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Install Yarn
-        run: npm install --global yarn
+        uses: Borales/actions-yarn@v2.3.0
+          with:
+          # Yarn command
+          cmd: 
+          # NPM_AUTH_TOKEN
           
       - name: Build Folder
         run : yarn build

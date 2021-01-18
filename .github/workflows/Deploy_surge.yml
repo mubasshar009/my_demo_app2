@@ -37,6 +37,6 @@ jobs:
           
           
       - name: Build Folder
-        run : yarn build
+        run : npm run build
       - name: Deploy to Surge
         run : surge ./build http://my_demo_app22.surge.sh/ --token ${{secrets.Token_Surge}}
